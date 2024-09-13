@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const imageRoutes = require('./routes/imageRoutes');
+const imageRoutes = require('./routes/ImageRoutes');
 app.use('/api', imageRoutes);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
